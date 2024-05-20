@@ -1,0 +1,61 @@
+a {
+  color: #fff;
+}
+div.slidable-cards {
+  overflow: hidden;
+}
+div.slidable-cards-container h2 {
+  color: #3a4c70;
+}
+.slidable-cards-container {
+  background-color: #d8d8d8;
+  padding: 5px 20px 30px 20px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+section.business-segment {
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+.slidable-cards {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.explore-card {
+  flex: 0 0 auto;
+  width: calc(25% - 10px); /* Adjust for margin */
+  margin-right: 10px; /* Spacing between cards */
+  scroll-snap-align: start;
+  border-radius: 8px;
+  color: white;
+  text-align: left;
+  background-size: cover;
+  padding-left: 10px;
+}
+
+.navigation-dots {
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  overflow: none;
+}
+
+.nav-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #bebebe;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.nav-dot.active {
+  background-color: blue;
+}

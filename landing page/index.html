@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Card slider/slide.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="../Card slider/slide.js"></script>
+    <link rel="stylesheet" href="../pop up/styles.css" />
+    <script src="../pop up/scripts.js"></script>
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <span class="header-business-segment"
+          ><a href="#">Business Segment</a></span
+        >
+        <nav class="header-login">
+          <a class="login" href="../login/index.html" aria-label="Log in"
+            >Log In</a
+          >
+        </nav>
+      </div>
+    </header>
+    <section class="intro">
+      <div class="left">
+        <h2>
+          Connecting Entrepreneurs with Finance and bridging funding gaps.
+        </h2>
+        <button onclick="location.href='#get-started';">Get Started</button>
+      </div>
+      <div class="right">
+        <img
+          src="../images/desk-scene-with-laptop.png"
+          alt="desk-scene-with-laptop"
+        />
+      </div>
+    </section>
+    <section class="business-segment">
+      <div class="slidable-cards-container">
+        <h2>Explore Business Segments</h2>
+        <div class="slidable-cards">
+          <div
+            class="explore-card"
+            style="background-image: url(../images/host1.png)"
+          >
+            <div class="explore-card-content">
+              <h3>Hospitality</h3>
+              <p>Varies areas in Hospitality, Culinary and Tourism</p>
+              <a href="">Learn More ></a>
+            </div>
+          </div>
+          <div
+            class="explore-card"
+            style="background-image: url(../images/ente1.png)"
+          >
+            <div class="explore-card-content">
+              <h3>Entertainment</h3>
+              <p>Exhibitions, Coliseum/threater Creative Hub</p>
+              <a href="">Learn More ></a>
+            </div>
+          </div>
+          <div
+            class="explore-card"
+            style="background-image: url(../images/media1.png)"
+          >
+            <div class="explore-card-content">
+              <h3>Media Communication</h3>
+              <p>
+                Content production, media and Publishing, Outdoor Advertising
+                and Emerging Business
+              </p>
+              <a href="">Learn More ></a>
+            </div>
+          </div>
+          <div
+            class="explore-card"
+            style="background-image: url(../images/fashion.png)"
+          >
+            <div class="explore-card-content">
+              <h3>Fashion, Arts, Crafts</h3>
+              <p>Fashions, Creative Arts Crafts</p>
+              <a href="">Learn More ></a>
+            </div>
+          </div>
+          <div
+            class="explore-card"
+            style="background-image: url(../images/host1.png)"
+          >
+            <div class="explore-card-content">
+              <h3>Hospitality</h3>
+              <p>Varies areas in Hospitality, Culinary and Tourism</p>
+              <a href="">Learn More ></a>
+            </div>
+          </div>
+          <div
+            class="explore-card"
+            style="background-image: url(../images/ente1.png)"
+          >
+            <div class="explore-card-content">
+              <h3>Entertainment</h3>
+              <p>Exhibitions, Coliseum/threater Creative Hub</p>
+              <a href="">Learn More ></a>
+            </div>
+          </div>
+        </div>
+        <div class="navigation-dots">
+          <span class="nav-dot active"></span>
+          <span class="nav-dot"></span>
+          <span class="nav-dot"></span>
+          <span class="nav-dot"></span>
+        </div>
+      </div>
+    </section>
+    <section class="popup-section">
+      <div class="popup" id="popup">
+        <div class="popup-content">
+          <span class="close" id="closePopup">&times;</span>
+          <div class="popup-left">
+            <div class="card-container">
+              <div class="card active" data-image="../images/social-media.png">
+                <h3>
+                  Entrepreneurs Support Bank... Are you an Entrepreneur with a
+                  Startup, Expansion and diversification plan?
+                </h3>
+                <button>Get Started</button>
+              </div>
+              <div class="card" data-image="../images/hands.png">
+                <h3>
+                  IDEATORS BANK… Are you looking for investors or strategic
+                  partners to bankroll your smart business concept?
+                </h3>
+                <button>Get Started</button>
+              </div>
+              <div class="card" data-image="../images/dancers.png">
+                <h3>
+                  Home2Guarantees... Are you trying to access credit and
+                  requires a third party guarantee?
+                </h3>
+                <button>Get Started</button>
+              </div>
+            </div>
+            <div class="dots">
+              <span class="dot active" data-index="0"></span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+            </div>
+          </div>
+          <div class="popup-right">
+            <img src="../images/social-media.png" alt="Image" id="popupImage" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-column">
+          <a href="#" class="footer-link">Company</a>
+          <a href="#" class="footer-link">Contact Us</a>
+          <a href="#" class="footer-link">FAQ</a>
+        </div>
+        <div class="footer-column">
+          <a href="#" class="footer-link">Terms of Use</a>
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Agreement</a>
+        </div>
+        <div class="footer-column">
+          <p>All rights reserved.</p>
+          <div class="social-icons">
+            <a href="#"
+              ><img
+                src="../../images/facebook-logo.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="../../images/telegram-logo.png"
+                alt="Telegram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="../../images/instagram-logo.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="../../images/whatsapp-logo.png"
+                alt="WhatsApp"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

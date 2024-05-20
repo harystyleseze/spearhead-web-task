@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header></header>
+    <div class="login-container">
+      <h2>Please log into continue</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="email" class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-envelope"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm14-1H2a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm1 2.383l-6.354 3.81a.5.5 0 0 1-.292 0L1 5.383V12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5.383z"
+              />
+            </svg>
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <div class="error-message" id="emailError"></div>
+        </div>
+        <div class="form-group">
+          <label for="password" class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-lock"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 1a4 4 0 0 0-4 4v2H3a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5a2 2 0 0 0-2-2h-1V5a4 4 0 0 0-4-4zm-3 4V5a3 3 0 0 1 6 0v2H5V5zm7 4v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1z"
+              />
+            </svg>
+          </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <div class="error-message" id="passwordError"></div>
+        </div>
+        <button type="submit">Log In</button>
+        <div class="links">
+          <a href="../forgot password page/index.html" class="forgot-password"
+            >Forgot Password?</a
+          >
+          <span
+            >Don't have an account?
+            <a href="../create account page/index.html" class="create-account"
+              >Create Account</a
+            ></span
+          >
+        </div>
+      </form>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

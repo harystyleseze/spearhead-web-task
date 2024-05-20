@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header"></header>
+    <div class="create-account-container">
+      <h2>Create Your Account</h2>
+      <form id="createAccountForm">
+        <h3>Choose Account Type</h3>
+        <div class="form-group">
+          <div class="select-container">
+            <select id="accountType" name="accountType" required>
+              <option value="" disabled selected>Select Account Type</option>
+              <option value="entrepreneur">Entrepreneur</option>
+              <option value="individual">Individual</option>
+              <option value="investor">Investor</option>
+              <option value="educator">Educator</option>
+            </select>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </div>
+          <span class="error" id="accountTypeError"></span>
+        </div>
+        <div class="form-group">
+          <label for="firstName" class="icon">
+            <svg
+              width="40"
+              height="30"
+              viewBox="0 0 46 39"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 0H46V39H0V0Z"
+                fill="#D8D8D8"
+                fill-opacity="0.01"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M23 20.9366C27.1283 20.9366 30.475 17.9959 30.475 14.3682C30.475 10.7406 27.1283 7.7998 23 7.7998C18.8717 7.7998 15.525 10.7406 15.525 14.3682C15.525 17.9959 18.8717 20.9366 23 20.9366Z"
+                stroke="#090F47"
+                stroke-width="1.5"
+              />
+              <path
+                d="M34.96 32.7595C34.96 26.9553 29.6053 22.25 23 22.25C16.3947 22.25 11.04 26.9553 11.04 32.7595"
+                stroke="#090F47"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="First Name"
+            required
+          />
+          <span class="error" id="firstNameError"></span>
+        </div>
+        <div class="form-group">
+          <label for="lastName" class="icon">
+            <svg
+              width="40"
+              height="30"
+              viewBox="0 0 46 39"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 0H46V39H0V0Z"
+                fill="#D8D8D8"
+                fill-opacity="0.01"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M23 20.9366C27.1283 20.9366 30.475 17.9959 30.475 14.3682C30.475 10.7406 27.1283 7.7998 23 7.7998C18.8717 7.7998 15.525 10.7406 15.525 14.3682C15.525 17.9959 18.8717 20.9366 23 20.9366Z"
+                stroke="#090F47"
+                stroke-width="1.5"
+              />
+              <path
+                d="M34.96 32.7595C34.96 26.9553 29.6053 22.25 23 22.25C16.3947 22.25 11.04 26.9553 11.04 32.7595"
+                stroke="#090F47"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            placeholder="Last Name"
+            required
+          />
+          <span class="error" id="lastNameError"></span>
+        </div>
+        <div class="form-group">
+          <label for="username" class="icon">
+            <svg
+              width="40"
+              height="30"
+              viewBox="0 0 46 39"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 0H46V39H0V0Z"
+                fill="#D8D8D8"
+                fill-opacity="0.01"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M23 20.9366C27.1283 20.9366 30.475 17.9959 30.475 14.3682C30.475 10.7406 27.1283 7.7998 23 7.7998C18.8717 7.7998 15.525 10.7406 15.525 14.3682C15.525 17.9959 18.8717 20.9366 23 20.9366Z"
+                stroke="#090F47"
+                stroke-width="1.5"
+              />
+              <path
+                d="M34.96 32.7595C34.96 26.9553 29.6053 22.25 23 22.25C16.3947 22.25 11.04 26.9553 11.04 32.7595"
+                stroke="#090F47"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Username"
+            required
+          />
+          <span class="error" id="usernameError"></span>
+        </div>
+        <div class="form-group">
+          <label for="email" class="icon">
+            <svg
+              width="60"
+              height="30"
+              viewBox="13 5 60 39"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <rect width="66" height="39" fill="url(#pattern0_1000_2167)" />
+              <defs>
+                <pattern
+                  id="pattern0_1000_2167"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    xlink:href="#image0_1000_2167"
+                    transform="matrix(0.0061553 0 0 0.0104167 0.204545 0)"
+                  />
+                </pattern>
+                <image
+                  id="image0_1000_2167"
+                  width="96"
+                  height="96"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAACuElEQVR4nO2csWpUQRSGP6KsENBeQX2ARJJCfArDNtpa+gq+go2SiFFsLbURbNVai2gR7VVYe5PYZRm5MhcWNMTdOTNnZu//wYGt9t5zvrvz773ZDAghhBBCCCGEEEIIIYQQQvzNNWAH+AwcAWHgdRRnsQ2s57xgzgFPgGkFTYdKq5vNLjDKMfx3FTQYGqm31hKeVtBUaKweW675WnaYW8AxsGYhYKeCqyk0Wg8tBHypoJHQaO1bCDisoJHQaB1YCFj04BPgFu1zE/iaMIdkUq+C18AV2uMi8Nyg/2QsPoq/gHvAGepnBbgL/DTqPRnLNfETcIN62QDeG/ecTDCu7p7iGXCeelgF7sfv7tb9JhMy1QS4Tfsh26yA4BzSViHbvIBQOKStQ3YpBIRCIb0JfCjcUzKhcE1jSF+gjZCtTsBHoxP/DowNzn8c38vinBbpLZl5D9ivsQfOIX3JMGT7jDrbgoDZAbx0COkV45DtLoCrBvMoLqBnC/hWKKQ3DUP2B3AnwzyKC7AOwek/Qjr3+zcvoOc6sGcc0mPDkN2L51hqHsUFkCGkQ+GMaV5AjpAOhiHrNQ+3A24ZhrRFyHrPw+WAqwXvVFPvtJdSQKlnNRbPmpZaQK6QtnzauvQCZkP6hUPInsZgBKSG9GTBkD2NwQmYN6RzPM5m6AL+N6RL/Opi0AJOetpZ8k+agxfQcxl4Fat7XQoJcEYCnJEAZyTAGQlwRgKckQBnJMAZCXBGApyRAGckwBkJcEYCnJEAZyTAGQlwRgKckQBnJGBoArRhEwtX98uNZLRlGb5blm0nnMDQ64GFgHWn/zAPjZfZtpXE7Xi9GwqN1SMMGcXteL2bCo3Umxz7R4/idrxajjhx8Mfxyjcf/ixrcUfYLuH1FZU/M9iPMzFb84UQQgghhBBCCCGEEEIIwdLwG8ly2Q4m+DtCAAAAAElFTkSuQmCC"
+                />
+              </defs>
+            </svg>
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <span class="error" id="emailError"></span>
+        </div>
+        <div class="form-group">
+          <label for="password" class="icon">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 42 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 0H42V40H0V0Z"
+                fill="#D8D8D8"
+                fill-opacity="0.01"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M21.84 8V8C17.724 8 14.49 11.04 14.49 14.9091V19.0545H29.19V14.9091C29.19 11.04 25.956 8 21.84 8V8Z"
+                stroke="#090F47"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.08 20.0549C10.08 19.5026 10.5277 19.0549 11.08 19.0549H32.6C33.1523 19.0549 33.6 19.5026 33.6 20.0549V32.6003C33.6 33.1526 33.1523 33.6003 32.6 33.6003H11.08C10.5277 33.6003 10.08 33.1526 10.08 32.6003V20.0549Z"
+                stroke="#090F47"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <span class="error" id="passwordError"></span>
+        </div>
+        <div class="form-group">
+          <label for="phone" class="icon">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 28 47"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.83778 15.1472C9.55778 20.65 13.94 25.1417 19.2856 27.9611L23.4411 23.6833C23.9511 23.1583 24.7067 22.9833 25.3678 23.2167C27.4833 23.9361 29.7689 24.325 32.1111 24.325C33.15 24.325 34 25.2 34 26.2694V33.0556C34 34.125 33.15 35 32.1111 35C14.3744 35 0 20.2028 0 1.94444C0 0.875 0.85 0 1.88889 0H8.5C9.53889 0 10.3889 0.875 10.3889 1.94444C10.3889 4.375 10.7667 6.70833 11.4656 8.88611C11.6733 9.56667 11.5222 10.325 10.9933 10.8694L6.83778 15.1472Z"
+                fill="black"
+              />
+            </svg>
+          </label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Phone No"
+            required
+          />
+          <span class="error" id="phoneError"></span>
+        </div>
+        <button type="submit" class="create-account-btn">Create Account</button>
+      </form>
+      <div class="account-options">
+        <span>Already have an account?</span>
+        <a href="../login/index.html">Log In</a>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

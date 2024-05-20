@@ -1,0 +1,89 @@
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+} */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  background-color: #bebebe;
+  text-align: center;
+  color: white;
+  border-radius: 3px;
+  height: 90px;
+}
+
+/* .header {
+  background-color: #bebebe;
+  color: white;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+} */
+
+.select-account-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 40px;
+  margin-top: 60px;
+  width: 100%;
+  max-width: 400px;
+}
+
+h3 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.account-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  margin: 10px 0;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  transition: background-color 0.3s ease;
+}
+
+.account-btn:hover {
+  background-color: #0056b3;
+}
+#ideatorBtn {
+  background-color: #7182a4;
+}
+#capitalSeekerBtn {
+  background-color: #3a4c70;
+}
+#funderBtn {
+  background-color: #010136;
+}
+@media (max-width: 768px) {
+  .select-account-container {
+    width: 90%;
+  }
+}
