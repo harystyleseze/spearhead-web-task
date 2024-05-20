@@ -30,4 +30,4 @@ All form fields include robust validation to ensure user input meets specific re
 
 ### Deployed Link
 
-Visit this link to interact with the web app `https://<username>.github.io/<repository-name>`.
+Visit this link to interact with the web app `https://harystyleseze.github.io/spearhead-web-task/`.

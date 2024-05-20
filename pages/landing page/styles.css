@@ -99,7 +99,7 @@ a.login {
 
 .footer {
   background-color: #010631;
-  padding: 20px;
+  padding: 20px 20px 70px 20px;
   display: flex;
   justify-content: flex-end;
   color: #ffffff;
