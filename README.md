@@ -1,4 +1,4 @@
-## User Registration Web App
+## Web App
 
 This project implements a web app demonstrating user login and registration functionalities.
 
